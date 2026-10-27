@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mobile Job Radar – Privacy Policy</title>
+<style>
+  :root { --bg:#f7f9fb; --fg:#14202b; --muted:#506070; --line:#d5dde5; --accent:#0b6e6e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#10181f; --fg:#e6edf3; --muted:#9fb0bf; --line:#2a3947; --accent:#4fd1c5; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font:17px/1.65 Georgia, "Times New Roman", serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 4rem; }
+  h1 { font:700 2rem/1.2 system-ui, sans-serif; margin:0 0 .25rem; }
+  h2 { font:600 1.2rem/1.3 system-ui, sans-serif; margin:2.2rem 0 .5rem;
+    padding-top:1.2rem; border-top:1px solid var(--line); }
+  p, li { max-width:40rem; }
+  .meta { color:var(--muted); font:.95rem system-ui, sans-serif; }
+  a { color:var(--accent); }
+  code { font:.9em ui-monospace, Menlo, monospace; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mobile Job Radar – Privacy Policy</h1>
+  <p class="meta">Last updated: 27 October 2026</p>
+
+  <p>Mobile Job Radar is a personal, non-commercial tool built and used by a single developer. It searches publicly available Threads posts for mobile-developer job opportunities and sends a private notification to the owner of the app. It is not offered to the public and has no other users.</p>
+
+  <h2>What data the app processes</h2>
+  <p>Using the official Threads API (<code>threads_basic</code> and <code>threads_keyword_search</code>), the app reads only public posts that match job-related keywords. For each post it processes:</p>
+  <ul>
+    <li>the post text,</li>
+    <li>the public username of the author,</li>
+    <li>the post ID, timestamp and permalink.</li>
+  </ul>
+  <p>The app does not read private accounts, direct messages, follower lists or any non-public information.</p>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>Posts are filtered by keywords locally on the owner's computer.</li>
+    <li>Matching post text may be sent to the Google Gemini API to judge whether it is a relevant job opportunity and to draft a reply for the owner.</li>
+    <li>A short notification with a link to the original post is sent to the owner's private Telegram chat.</li>
+  </ul>
+
+  <h2>What is stored</h2>
+  <p>The app stores only a local list of post IDs that it has already seen, so that the same post is not reported twice. Post text is not kept in a database and is not republished, sold, shared with third parties or used for advertising, profiling or training models.</p>
+
+  <h2>Third-party services</h2>
+  <ul>
+    <li><strong>Meta Threads API</strong> – source of public posts. <a href="https://privacycenter.instagram.com/policy">Meta's privacy policy</a> applies.</li>
+    <li><strong>Google Gemini API</strong> – evaluates matching post text. <a href="https://policies.google.com/privacy">Google's privacy policy</a> applies.</li>
+    <li><strong>Telegram</strong> – delivers notifications to the owner. <a href="https://telegram.org/privacy">Telegram's privacy policy</a> applies.</li>
+  </ul>
+
+  <h2 id="data-deletion">Data deletion requests</h2>
+  <p>If you authored a Threads post that was processed by this app and want any related data removed, email <a href="mailto:EMAIL_ANDA@example.com">EMAIL_ANDA@example.com</a> with a link to your post. The post ID will be removed from the local list and any notification containing it will be deleted, within 7 days. Because no other copy of your data is kept, this removes everything the app holds about you.</p>
+  <p>Users who authorize the app can also revoke access at any time in Threads under Settings → Account → Website permissions.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app's behavior changes, this page will be updated and the date above revised.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:EMAIL_ANDA@example.com">EMAIL_ANDA@example.com</a></p>
+
+  <h2>Ringkasan (Bahasa Indonesia)</h2>
+  <p>Mobile Job Radar adalah alat pribadi untuk mencari postingan lowongan developer mobile yang bersifat publik di Threads. Aplikasi hanya memproses teks, username publik, dan tautan postingan, lalu mengirim notifikasi pribadi ke pemiliknya. Konten tidak dijual, dibagikan, atau dipublikasikan ulang. Yang disimpan hanya daftar ID postingan agar tidak terkirim dua kali. Untuk permintaan penghapusan data, hubungi email di atas.</p>
+</main>
+</body>
+</html>
